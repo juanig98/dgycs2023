@@ -1,0 +1,11 @@
+@for $i from 1 through 5 {
+    .xp-#{$i} {
+        padding: #{$i}rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .xp-#{$i} {
+            padding: 2vw;
+        }
+    }
+} 
