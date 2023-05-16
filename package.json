@@ -2,6 +2,8 @@
   "name": "dgcs",
   "version": "1.0.0",
   "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
   "main": "src/index.js",
   "homepage": "https://juanig98.github.io/dgycs2023",
   "scripts": {
@@ -11,12 +13,16 @@
     "scss:dev": "sass --watch --update --style=expanded src/assets/scss:src/assets/css",
     "scss:prod": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
     "predeploy": "concurrently \"parcel build\" \"npm run scss:prod\"",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build": "npm run scss:prod && parcel build --no-minify src/index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.0.1",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.23",
+    "postcss-preset-env": "^6.7.0", 
     "sass": "^1.62.1"
   },
   "dependencies": {
