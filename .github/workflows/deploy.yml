@@ -26,6 +26,6 @@ jobs:
 
     - name: Desplegar en GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.0
-      with:
-        branch: gh-pages
-        folder: _site
+      with: 
+        branch: main
+        folder: build
