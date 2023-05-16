@@ -4,7 +4,7 @@
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "source": "src/index.html",
-  "main": "src/index.js",
+  "main": "src/index.html",
   "homepage": "https://juanig98.github.io/dgycs2023",
   "scripts": {
     "start:parcel": "parcel src/index.html --port 3000 --open google-chrome",
