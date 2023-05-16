@@ -14,7 +14,7 @@
     "scss:prod": "sass --no-source-map --style=compressed src/assets/scss:src/assets/css",
     "predeploy": "concurrently \"parcel build\" \"npm run scss:prod\"",
     "deploy": "gh-pages -d dist",
-    "build": "npm run scss:prod && parcel build --no-minify src/index.html"
+    "build": "npm run scss:prod && parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
