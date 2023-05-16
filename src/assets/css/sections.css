@@ -1,0 +1,35 @@
+section.main {
+  min-height: calc(100vh + 100px);
+}
+section.main > article {
+  opacity: 0;
+  display: none;
+  transition: all 1.5s ease-in-out;
+}
+section.main > article.show {
+  opacity: 1;
+}
+
+section {
+  border: 1pt rgb(200, 5, 5) solid;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+section article {
+  width: 100%;
+}
+section.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+section.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/*# sourceMappingURL=sections.css.map */

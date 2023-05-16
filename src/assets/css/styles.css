@@ -1,0 +1,373 @@
+@import 'remixicon/fonts/remixicon.css';
+.xp-1 {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .xp-1 {
+    padding: 2vw;
+  }
+}
+.xp-2 {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .xp-2 {
+    padding: 2vw;
+  }
+}
+.xp-3 {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .xp-3 {
+    padding: 2vw;
+  }
+}
+.xp-4 {
+  padding: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .xp-4 {
+    padding: 2vw;
+  }
+}
+.xp-5 {
+  padding: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .xp-5 {
+    padding: 2vw;
+  }
+}
+:root {
+  --primary-color: #294fa0;
+  --logo-color: #02102E;
+  --primary-color-0: #000411;
+  --primary-color-35: #010d27;
+  --primary-color-85: #253b69;
+  --primary-color-100: #305298;
+  --metallic: #9fa4c4;
+  --white-1: #ebf5f5;
+  --white-radial-gradient-1: radial-gradient(circle, #ebf5f5 0%, #ebebeb 100%);
+}
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("~/assets/fonts/NotoSans/NotoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("~/assets/fonts/NotoSans/NotoSans-Bold.ttf");
+}
+@font-face {
+  font-family: "NotoSans-BoldItalic";
+  src: url("~/assets/fonts/NotoSans/NotoSans-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Italic";
+  src: url("~/assets/fonts/NotoSans/NotoSans-Italic.ttf");
+}
+h1 {
+  font-size: 42px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.sentence {
+  margin-right: 15px;
+}
+
+.sliding-horizontal {
+  display: inline;
+  text-indent: 8px;
+  font-size: 60px !important;
+  color: var(--primary-color-100);
+}
+
+.sliding-horizontal span {
+  animation: leftToRight 12s linear infinite 0s;
+  -ms-animation: leftToRight 12s linear infinite 0s;
+  -webkit-animation: leftToRight 12s linear infinite 0s;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.sliding-horizontal span:nth-child(2) {
+  animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+.sliding-horizontal span:nth-child(3) {
+  animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+}
+
+/*leftToRight Animation*/
+@-moz-keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -moz-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -ms-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -ms-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -ms-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -ms-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.image-container {
+  opacity: 1;
+}
+
+.image-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes change-image {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.image-item:nth-child(1) {
+  animation: change-image 30s infinite;
+  animation-delay: 0s;
+}
+
+.image-item:nth-child(2) {
+  animation: change-image 30s infinite;
+  animation-delay: 3s;
+}
+
+.image-item:nth-child(3) {
+  animation: change-image 30s infinite;
+  animation-delay: 3s;
+}
+
+header {
+  height: 80px;
+  background: var(--primary-color-35);
+  background: linear-gradient(90deg, var(--primary-color-35) 0%, var(--primary-color-100) 50%, var(--primary-color-35) 100%);
+  display: flex;
+  justify-content: space-around;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+header .container-logo img.logo {
+  width: 230px;
+}
+
+.first-screen {
+  display: flex;
+  justify-content: space-between;
+}
+.first-screen .container-slogan {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.first-screen .container-slogan .slogan {
+  font-family: "NotoSans-Regular", Helvetica;
+  font-weight: bolder;
+  font-size: 55px !important;
+  color: var(--primary-color-85);
+  padding: 15rem 2.5rem 5rem;
+}
+.first-screen button {
+  padding: 1.2rem;
+  font-size: 21px;
+  letter-spacing: 1.2pt;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  border: 0;
+  color: var(--metallic);
+}
+.first-screen button:hover {
+  color: #fff;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 85%;
+  color: var(--primary-color-35);
+  font-family: "NotoSans-Regular", Helvetica;
+  border-radius: 20px;
+}
+
+.qualities {
+  display: block;
+}
+.qualities div {
+  width: fit-content;
+  display: inline-flex;
+  gap: 30px;
+  align-items: center;
+  padding: 20px 0;
+}
+.qualities div img {
+  width: 130px;
+  height: 125px;
+}
+.qualities div p {
+  max-width: 400px;
+  padding-right: 10px;
+}
+
+section.main {
+  min-height: calc(100vh + 100px);
+}
+section.main > article {
+  opacity: 0;
+  display: none;
+  transition: all 1.5s ease-in-out;
+}
+section.main > article.show {
+  opacity: 1;
+}
+
+section {
+  border: 1pt rgb(200, 5, 5) solid;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+section article {
+  width: 100%;
+}
+section.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+section.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--white-1);
+  background: var(--white-radial-gradient-1);
+  font-family: "NotoSans-Regular";
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1380px) {
+  main {
+    max-width: 1170px;
+  }
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white-1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color-0);
+  /* color of the scroll thumb */
+  border-radius: 6px;
+  /* roundness of the scroll thumb */
+  border: 1pt solid var(--primary-color);
+  /* creates padding around scroll thumb */
+}
+
+/*# sourceMappingURL=styles.css.map */

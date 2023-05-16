@@ -1,0 +1,18 @@
+header {
+  height: 80px;
+  background: var(--primary-color-35);
+  background: linear-gradient(90deg, var(--primary-color-35) 0%, var(--primary-color-100) 50%, var(--primary-color-35) 100%);
+  display: flex;
+  justify-content: space-around;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+header .container-logo img.logo {
+  width: 230px;
+}
+
+/*# sourceMappingURL=header.css.map */
