@@ -27,5 +27,7 @@ jobs:
     - name: Desplegar en GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.0
       with: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPOSITORY_NAME: juanig98/dgycs2023
         branch: main
         folder: build
