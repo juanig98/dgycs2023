@@ -1,0 +1,134 @@
+.sentence{
+    margin-right: 15px;
+}
+.sliding-horizontal {
+    display: inline;
+    text-indent: 8px;
+    font-size: 60px !important;
+    color: var(--primary-color-100)
+}
+
+.sliding-horizontal span {
+    animation: leftToRight 12s linear infinite 0s;
+    -ms-animation: leftToRight 12s linear infinite 0s;
+    -webkit-animation: leftToRight 12s linear infinite 0s;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.sliding-horizontal span:nth-child(2) {
+    animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+.sliding-horizontal span:nth-child(3) {
+    animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+}
+ 
+
+/*leftToRight Animation*/
+@-moz-keyframes leftToRight {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+    }
+
+    10% {
+        opacity: 1;
+        -moz-transform: translateX(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -moz-transform: translateX(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -moz-transform: translateX(50px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes leftToRight {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+
+    10% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes leftToRight {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -ms-transform: translateX(-50px);
+    }
+
+    10% {
+        opacity: 1;
+        -ms-transform: translateX(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -ms-transform: translateX(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -ms-transform: translateX(50px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

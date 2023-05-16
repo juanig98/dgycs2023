@@ -1,0 +1,68 @@
+.first-screen {
+
+    display: flex;
+    justify-content: space-between;
+
+    .container-slogan {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+
+        .slogan {
+            font-family: 'NotoSans-Regular', Helvetica;
+            font-weight: bolder;
+            font-size: 55px !important;
+            color: var(--primary-color-85);
+            padding: 15rem 2.5rem 5rem;
+
+        }
+    }
+
+    button {
+        padding: 1.2rem;
+        font-size: 21px;
+        letter-spacing: 1.2pt;
+        background-color: var(--primary-color);
+        border-radius: 8px;
+        border: 0;
+        color: var(--metallic);
+
+        &:hover {
+            color: #fff;
+
+        }
+    }
+}
+
+
+.banner {
+    margin: 0 auto;
+    width: 85%;
+    color: var(--primary-color-35);
+    font-family: 'NotoSans-Regular', Helvetica;
+    border-radius: 20px;
+}
+
+.banner-qualities {}
+
+.qualities {
+    display: block;
+
+    div {
+        width: fit-content;
+        display: inline-flex;
+        gap: 30px;
+        align-items: center;
+        padding: 20px 0;
+
+        img {
+            width: 130px;
+            height: 125px;
+        }
+
+        p {
+            max-width: 400px;
+            padding-right: 10px;
+        }
+    }
+}

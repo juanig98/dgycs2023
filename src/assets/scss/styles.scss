@@ -1,56 +1,32 @@
-@import './spacings.scss';
-@import './colors.scss';
+// Import lib
+@import './lib/spacings.scss';
+@import './lib/colors.scss';
+@import './lib/fonts.scss';
+@import './lib/display.scss';
+// Import icons
+@import 'remixicon/fonts/remixicon.css';
+// Import animations
+// @import './animations/animate-scroll.scss';
+@import './animations/sliding.scss';
+// This folder
 @import './image-container.scss';
-@import './fonts.scss';
-
-
-$color-0: #000411;
-$color-35: #010d27;
-$color-100: #253b69;
+@import './header.scss';
+@import './articles.scss';
+@import './sections.scss';
 
 body {
     margin: 0;
     padding: 0;
-    background: $color-100;
-    background: linear-gradient(90deg, $color-0 0%, $color-35 35%, $color-100 100%);
+    background: var(--white-1);
+    background: var(--white-radial-gradient-1);
+    font-family: "NotoSans-Regular";
 }
 
 
-header {
-    height: 80px;
-    background: $color-0;
-    background: linear-gradient(90deg, $color-100 0, $color-35 65%, $color-0 100%);
-    display: flex;
-    justify-content: space-around;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-
-    .container-logo {
-        img.logo {
-            width: 300px;
-        }
-    }
-}
 
 main {
     max-width: 1400px;
     margin: auto;
-
-    article {
-        width: 100%;
-    }
-}
-
-main {
-    max-width: 1600px;
-}
-
-.banner {
-    background: $color-100;
-    background: linear-gradient(90deg, $color-0 0%, $color-35 35%, $color-100 100%);
-    border-radius: 20px;
-    color: #fff;
-    padding: 20px;
 }
 
 @media screen and (max-width: 1380px) {
@@ -60,127 +36,20 @@ main {
 }
 
 
-.article-1 {
-    display: flex;
-    justify-content: space-between;
-
-    .container-slogan {
-        width: 50vw;
-        display: flex;
-        justify-content: center;
-
-        .slogan {
-            max-width: 820px;
-            font-family: 'NotoSans-Regular', Helvetica;
-            font-size: 58px !important;
-            color: #fff;
-            text-transform: uppercase;
-            padding: 15rem 2.5rem;
-
-            b {
-                color: #fff
-            }
-        }
-    }
-
-
-    .illustrations {
-        width: 40vw;
-        position: relative;
-        margin: 0 auto;
-
-        img {
-            position: absolute;
-            left: 0;
-            -webkit-transition: opacity 1s ease-in-out;
-            -moz-transition: opacity 1s ease-in-out;
-            -o-transition: opacity 1s ease-in-out;
-            transition: opacity 1s ease-in-out;
-        }
-
-    }
-
-    //     img.top:hover {
-    //         opacity: 0;
-    //     }
-
-    //     img.top {
-    //         animation-name: illustrationFadeInOut;
-    //         animation-timing-function: ease-in-out;
-    //         animation-iteration-count: infinite;
-    //         animation-duration: 4s;
-    //         animation-direction: alternate;
-    //     }
-
-    //     img.transparent {
-    //         opacity: 0;
-    //     }
-
-    //     img:nth-of-type(1) {
-    //         animation-delay: 6s;
-    //     }
-
-    //     img:nth-of-type(2) {
-    //         animation-delay: 4s;
-    //     }
-
-    //     img:nth-of-type(3) {
-    //         animation-delay: 2s;
-    //     }
-
-    //     img:nth-of-type(4) {
-    //         animation-delay: 0;
-    //     }
-
-    // }
+body::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
 }
 
-
-
-
-// @keyframes illustrationFadeInOut {
-//     0% {
-//         opacity: 1;
-//     }
-
-//     17% {
-//         opacity: 1;
-//     }
-
-//     25% {
-//         opacity: 0;
-//     }
-
-//     92% {
-//         opacity: 0;
-//     }
-
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
-
-#spin {
-    color: #b5cdf8;
-    font-weight: bold;
+body::-webkit-scrollbar-track {
+    background: var(--white-1); 
 }
 
-#spin:after {
-    content: "";
-    animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        content: "AUTENTIFICACIÓN";
-    }
-
-    50% {
-        content: "ACCESO";
-    }
-
-    100% {
-        content: "VALIDACIÓN";
-    }
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-0);
+    /* color of the scroll thumb */
+    border-radius: 6px;
+    /* roundness of the scroll thumb */
+    border: 1pt solid var(--primary-color);
+    /* creates padding around scroll thumb */
 }
