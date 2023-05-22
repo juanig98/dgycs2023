@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "source": "src/index.html", 
+  "source": "src/index.html",
   "homepage": "https://juanig98.github.io/dgycs2023",
   "scripts": {
     "start:parcel": "parcel src/index.html --port 3000 --open google-chrome",
@@ -21,11 +21,12 @@
     "concurrently": "^8.0.1",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.23",
-    "postcss-preset-env": "^6.7.0", 
+    "postcss-preset-env": "^6.7.0",
     "sass": "^1.62.1"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
+    "parcel": "^2.8.3",
     "remixicon": "^3.2.0"
   }
 }

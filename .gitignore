@@ -1,5 +1,5 @@
 .env
-
+.parcel-cache
 # Logs
 logs
 *.log
