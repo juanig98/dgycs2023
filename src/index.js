@@ -61,16 +61,17 @@ const logoWidth = 230;
 
 window.addEventListener('scroll', function () {
     const yMax = document.body.offsetHeight - window.innerHeight;
-    const xMax = window.innerWidth;
+    const xMax = document.body.offsetWidth - logoWidth / 2;
 
+    console.log(xMax);
     const scrollPosition = document.documentElement.scrollTop;
     const propY = scrollPosition / yMax;
     const x = (propY - .5) * 2;
     // Posición
     logo.style.top = (scrollPosition * 0.2) + "px";
-    const desp = xMax * (x + 1) * (x + .6) * (x + .2) * (x - .2) * (x - .6) * (x - 1);
+    const desp = yMax * (x + 1) * (x + .6) * (x) * (x - .6) * (x - 1);
     console.log({ desp });
-    logo.style.left = 683 + desp + "px";
+    logo.style.left = xMax / 2 + desp + "px";
     // calculatePositionLogo(yMax, scrollPosition, propY)
 
     // // Tamaño
