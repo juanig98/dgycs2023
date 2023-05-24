@@ -57,11 +57,12 @@ var initialX = 0;
 var initialY = 0;
 var amplitude = 100; // Ajusta la amplitud de la parábola
 var frequency = 0.02; // Ajusta la frecuencia de la parábola
+const logoHeight = 200;
 const logoWidth = 230;
 
 window.addEventListener('scroll', function () {
     const yMax = document.body.offsetHeight - window.innerHeight;
-    const xMax = document.body.offsetWidth - logoWidth / 2;
+    const xMax = document.body.offsetWidth;
 
     console.log(xMax);
     const scrollPosition = document.documentElement.scrollTop;
@@ -69,9 +70,8 @@ window.addEventListener('scroll', function () {
     const x = (propY - .5) * 2;
     // Posición
     logo.style.top = (scrollPosition * 0.2) + "px";
-    const desp = yMax * (x + 1) * (x + .6) * (x) * (x - .6) * (x - 1);
-    console.log({ desp });
-    logo.style.left = xMax / 2 + desp + "px";
+    const desp = (yMax - logoHeight) * (x + 1) * (x + .5) * (x) * (x - .5) * (x - 1);
+    logo.style.left = (xMax / 2 - logoWidth / 2) + desp + "px";
     // calculatePositionLogo(yMax, scrollPosition, propY)
 
     // // Tamaño

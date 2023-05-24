@@ -2,7 +2,7 @@ header {
     height: 80px;
 
     background: var(--primary-color-35);
-    background: linear-gradient(90deg, var(--primary-color-35) 0%, var(--primary-color-100) 50%, var(--primary-color-35) 100%);
+    background: linear-gradient(90deg, #020F2C 0%, #020F2C 35%, #fff 50%, #020F2C 65%, #020F2C 100%);
     // background: var(--primary-color-0);
     // background: linear-gradient(90deg, var(--primary-color-100) 0, var(--primary-color-35) 65%, var(--primary-color-0) 100%);
 
@@ -16,7 +16,36 @@ header {
     width: 100%;
     z-index: 100;
 
+    .header-topbar {
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+    }
 
+    .safepass {
+        width: 25%;
+        font-family: "NotoSans-Regular";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: left;
+        line-height: 41px;
+        padding-left: 2rem;
+        color: #FFFFFF;
+    }
+
+    .container-logo {
+        width: 50%;
+    }
+
+    .container-acceder {
+        width: 25%;
+        text-align: right;
+        line-height: 41px;
+        padding-left: 2rem;
+        color: #FFFFFF;
+    }
 }
 
 
@@ -24,6 +53,6 @@ img#logo {
     width: 230px;
     position: fixed;
     top: 0;
-    left: 45%;
+    left: calc(50% - 230px/2);
     // transform: translate(-50%, 0);
 }

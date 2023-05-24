@@ -1,7 +1,5 @@
 .first-screen {
 
-    display: flex;
-    justify-content: space-between;
 
     .container-slogan {
         width: 50vw;
@@ -18,20 +16,7 @@
         }
     }
 
-    button {
-        padding: 1.2rem;
-        font-size: 21px;
-        letter-spacing: 1.2pt;
-        background-color: var(--primary-color);
-        border-radius: 8px;
-        border: 0;
-        color: var(--metallic);
-
-        &:hover {
-            color: #fff;
-
-        }
-    }
+  
 }
 
 
@@ -65,4 +50,28 @@
             padding-right: 10px;
         }
     }
+}
+
+.titles {
+    color: #0F1E50; 
+    width: 50%;
+    font-family: 'NotoSans-Regular', Helvetica;
+
+    .title-1 {
+        padding-left: 80px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .subtitle-1 {
+        padding-left: 130px;
+        font-size: 22px;
+    }
+}
+
+.pic-1 {
+    width: 50%;
+    text-align: center;
 }

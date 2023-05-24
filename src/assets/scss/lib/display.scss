@@ -1,4 +1,19 @@
-.flex-center{
+.flex-center {
     display: flex;
     justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w-full {
+    width: 100%;
+}
+.align-items-center{
+    align-items: center;
 }

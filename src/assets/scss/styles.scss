@@ -3,6 +3,7 @@
 @import './lib/colors.scss';
 @import './lib/fonts.scss';
 @import './lib/display.scss';
+@import './lib/buttons.scss';
 // Import icons
 // @import 'src/node_modules/remixicon/fonts/remixicon.css';
 // Import animations
@@ -17,9 +18,12 @@
 body {
     margin: 0;
     padding: 0;
+    // background-image: url('~assets/img/bg5-original.png');  
     background: var(--white-1);
     background: var(--white-radial-gradient-1);
+    background-image: url('~assets/img/bg6.png');  
     font-family: "NotoSans-Regular";
+    
 }
 
 
@@ -42,7 +46,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--white-1); 
+    background: var(--white-1);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -53,3 +57,76 @@ body::-webkit-scrollbar-thumb {
     border: 1pt solid var(--primary-color);
     /* creates padding around scroll thumb */
 }
+
+
+.logo-2-1 {
+    width: 110px;
+    opacity: 0.7;
+    position: absolute;
+    top: calc(10% + 230px/2);
+    left: calc(55% - 230px/2);
+    transform: rotate(80deg);
+}
+
+.logo-2-2 {
+    width: 120px;
+    opacity: 0.85;
+    position: absolute;
+    top: calc(10% + 230px/2);
+    left: calc(47% - 230px/2);
+    transform: rotate(160deg);
+}
+
+.logo-3-1 {
+    width: 150px;
+    opacity: 0.7;
+    position: absolute;
+    top: calc(30% + 230px/2);
+    left: calc(60% - 230px/2);
+    transform: rotate(210deg);
+}
+
+.logo-3-2 {
+    width: 130px;
+    opacity: 0.85;
+    position: absolute;
+    top: calc(30% + 230px/2);
+    left: calc(52% - 230px/2);
+    transform: rotate(160deg);
+}
+
+.logo-3-3 {
+    width: 135px;
+    opacity: 0.6;
+    position: absolute;
+    top: calc(40% + 230px/2);
+    left: calc(61% - 230px/2);
+    transform: rotate(-40deg);
+}
+
+.logo-3-4 {
+    width: 140px;
+    opacity: 0.7;
+    position: absolute;
+    top: calc(40% + 230px/2);
+    left: calc(52% - 230px/2);
+    transform: rotate(35deg);
+}
+.logo-4-1 {
+    width: 135px;
+    opacity: 0.6;
+    position: absolute;
+    top: calc(58% + 230px/2);
+    left: calc(58% - 230px/2);
+    transform: rotate(-30deg);
+}
+
+.logo-4-2 {
+    width: 140px;
+    opacity: 0.7;
+    position: absolute;
+    top: calc(60% + 230px/2);
+    left: calc(50% - 230px/2);
+    transform: rotate(10deg);
+}
+
