@@ -21,9 +21,8 @@ body {
     // background-image: url('~assets/img/bg5-original.png');  
     background: var(--white-1);
     background: var(--white-radial-gradient-1);
-    background-image: url('~assets/img/bg6.png');  
+    background-image: url('../img/bg6.png');
     font-family: "NotoSans-Regular";
-    
 }
 
 
@@ -112,6 +111,7 @@ body::-webkit-scrollbar-thumb {
     left: calc(52% - 230px/2);
     transform: rotate(35deg);
 }
+
 .logo-4-1 {
     width: 135px;
     opacity: 0.6;
@@ -129,4 +129,3 @@ body::-webkit-scrollbar-thumb {
     left: calc(50% - 230px/2);
     transform: rotate(10deg);
 }
-
