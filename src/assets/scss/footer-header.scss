@@ -1,0 +1,119 @@
+header {
+    height: 80px;
+
+    background: var(--primary-color-35);
+    background: linear-gradient(90deg, #020F2C 0%, #020F2C 35%, #fff 50%, #020F2C 65%, #020F2C 100%);
+    // background: var(--primary-color-0);
+    // background: linear-gradient(90deg, var(--primary-color-100) 0, var(--primary-color-35) 65%, var(--primary-color-0) 100%);
+
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+
+    .header-topbar {
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+    }
+
+    .safepass {
+        width: 25%;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: left;
+        line-height: 41px;
+        padding-left: 2rem;
+        color: #FFFFFF;
+
+        u {
+            color: #FFFFFF;
+        }
+    }
+
+    .container-logo {
+        width: 50%;
+    }
+
+    .container-acceder {
+        width: 25%;
+        text-align: right;
+        line-height: 41px;
+        padding-left: 2rem;
+        color: #FFFFFF;
+    }
+}
+
+
+img#logo {
+    width: 230px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 230px/2);
+    // transform: translate(-50%, 0);
+}
+
+
+$footer-size: 120px;
+
+footer {
+    height: $footer-size;
+    margin: -$footer-size 0;
+    position: relative;
+    bottom: 0px;
+    background: var(--primary-color-35);
+    background: linear-gradient(90deg, #020F2C 0%, #020F2C 35%, #fff 50%, #020F2C 65%, #020F2C 100%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 0;
+
+    .links {
+        padding: 20px 0; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #efefef;
+
+            &:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .right-container {
+        padding: 20px 0;
+
+        .safepass {
+            width: 25%;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 30px;
+            text-align: left;
+            line-height: 41px;
+            color: #fff !important;
+
+            u {
+                color: #fff !important;
+            }
+
+        }
+
+        .copyright {
+            font-size: 10px;
+            color: #efefef;
+        }
+    }
+}

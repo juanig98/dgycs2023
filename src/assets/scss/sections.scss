@@ -1,5 +1,6 @@
 section.main {
-    min-height: calc(100vh + 100px);
+    min-height: calc(100vh);
+    
 
     &>article {
         opacity: 0;
@@ -13,14 +14,15 @@ section.main {
 }
 
 section {
-    border: 1pt rgb(200, 5, 5) solid;
+    max-height: calc(100vh);
+    // border: 1pt rgb(200, 5, 5) solid;
+    overflow: hidden;
+    
     article {
         width: 100%;
     }
 
-    display: grid;
-    place-items: center;
-    align-content: center;
+
     min-height: 100vh;
 
     &.hidden {
@@ -29,11 +31,18 @@ section {
         transform: translateX(-100%);
         transition: all 1s;
     }
-    
+
     &.show {
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
+    }
+
+    &.ai-center {
+        display: grid;
+        place-items: center;
+        align-content: center;
+
     }
 
 }

@@ -1,22 +1,19 @@
-.first-screen {
+.article-home {
 
 
     .container-slogan {
-        width: 50vw;
         display: flex;
-        justify-content: center;
 
         .slogan {
             font-family: 'NotoSans-Regular', Helvetica;
             font-weight: bolder;
             font-size: 55px !important;
             color: var(--primary-color-85);
-            padding: 15rem 2.5rem 5rem;
 
         }
     }
 
-  
+
 }
 
 
@@ -24,11 +21,9 @@
     margin: 0 auto;
     width: 85%;
     color: var(--primary-color-35);
-    font-family: 'NotoSans-Regular', Helvetica;
     border-radius: 20px;
 }
 
-.banner-qualities {}
 
 .qualities {
     display: block;
@@ -53,7 +48,7 @@
 }
 
 .titles {
-    color: #0F1E50; 
+    color: #0F1E50;
     width: 50%;
     font-family: 'NotoSans-Regular', Helvetica;
 
@@ -74,4 +69,247 @@
 .pic-1 {
     width: 50%;
     text-align: center;
+}
+
+.article-features {
+    display: block;
+
+    .cont-title {
+        width: 100%;
+        position: relative;
+        left: calc(35vw - 200px);
+
+        h1 {
+            font-size: 48px;
+
+            .sliding-horizontal {
+                font-size: 60px;
+            }
+        }
+    }
+
+    .feature-card {
+        box-shadow: 0 6px 3px -2px rgb(21, 68, 178, 0.2);
+        background-color: rgba(255, 255, 255, 0.5);
+        border: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        max-width: 500px;
+        padding: 10px;
+        font-size: 14px;
+
+        h2 {
+            margin: 0;
+            margin-bottom: -10px;
+            font-weight: 900;
+            font-size: 25px;
+        }
+
+        ul {
+            width: fit-content;
+        }
+
+        img {
+            width: 110px;
+        }
+
+        &.feature-card-1 {
+            position: absolute;
+            left: 120px;
+            bottom: 45vh;
+        }
+
+        &.feature-card-2 {
+            position: absolute;
+            right: 120px;
+            bottom: 35vh;
+        }
+
+        &.feature-card-3 {
+            position: absolute;
+            left: 140px;
+            bottom: 15vh;
+        }
+
+        &.feature-card-4 {
+            position: absolute;
+            right: 140px;
+            bottom: 5vh;
+        }
+    }
+}
+
+article.article-plans {
+
+    h1 {
+        position: relative;
+        left: 150px;
+        top: 100px;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 36px;
+
+        .word-bottom {
+            margin-left: 150px;
+            font-size: 60px;
+            font-weight: 900;
+            top: 120px;
+            text-shadow: 1px 1px 2px #0F1E50;
+        }
+    }
+
+    .plan-card {
+        max-width: 360px;
+
+        .plan-image {
+            margin-bottom: -35px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            img {
+                width: 120px;
+            }
+        }
+
+        .plan-subcard {
+            margin: -10px auto;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 20px;
+            width: 300px;
+            border-radius: 40px;
+
+            h2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .plan-description {
+                font-size: 14px;
+
+                width: 300px;
+                margin: -20px auto auto;
+                display: flex;
+                justify-content: center;
+
+                ul {
+                    padding: 0;
+                }
+            }
+        }
+
+        &.plan-card-personal {
+            position: absolute;
+            right: 120px;
+            top: 15vh;
+        }
+
+        &.plan-card-organizations {
+            position: absolute;
+            left: 140px;
+            bottom: 25vh;
+        }
+
+        &.plan-card-business {
+            position: absolute;
+            right: 120px;
+            bottom: 10vh;
+        }
+
+        .plan-btns {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: -20px auto 0;
+
+            button {
+                background-color: var(--primary-color-35);
+                border-color: var(--primary-color-35);
+                color: #fff;
+                border-radius: 12px;
+                font-size: 18px;
+                font-weight: bold;
+                width: 150px;
+                padding: 6px 10px;
+
+                &:hover {
+                    background-color: var(--primary-color-85);
+                    border-color: var(--primary-color-85);
+                    color: #fff;
+                }
+            }
+
+            .button-nocost {
+                background-color: var(--primary-color-35);
+                border-color: var(--primary-color-35);
+                color: #fff;
+                border-radius: 12px;
+                font-size: 18px;
+                font-weight: bold;
+                width: 150px;
+                padding: 6px 10px;
+            }
+
+        }
+    }
+}
+
+.article-questions {
+
+    h1 {
+        font-size: 52px;
+        text-shadow: 1px 1px 2px #0F1E50;
+        margin-left: 100px;
+    }
+
+    .questions {
+        margin: 0 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 14px;
+        // grid-auto-rows: minmax(100px, auto);
+
+
+        .question {
+            height: 36px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: rgb(200, 208, 227, .3);
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                cursor: pointer;
+            }
+            
+            span {
+                width: 90%;
+            }
+
+            i {
+                width: 25px;
+            }
+
+            &:nth-child(2n+1) {
+                border-left: 2.5px solid var(--primary-color-35);
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+                i {
+                    margin-left: auto;
+                }
+            }
+
+            &:nth-child(2n) {
+                border-right: 2.5px solid var(--primary-color-35);
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+
+                span {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
 }

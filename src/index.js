@@ -63,8 +63,7 @@ const logoWidth = 230;
 window.addEventListener('scroll', function () {
     const yMax = document.body.offsetHeight - window.innerHeight;
     const xMax = document.body.offsetWidth;
-
-    console.log(xMax);
+ 
     const scrollPosition = document.documentElement.scrollTop;
     const propY = scrollPosition / yMax;
     const x = (propY - .5) * 2;

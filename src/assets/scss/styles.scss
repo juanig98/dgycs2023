@@ -5,13 +5,13 @@
 @import './lib/display.scss';
 @import './lib/buttons.scss';
 // Import icons
-// @import 'src/node_modules/remixicon/fonts/remixicon.css';
+@import 'remixicon/fonts/remixicon.css';
 // Import animations
 // @import './animations/animate-scroll.scss';
 @import './animations/sliding.scss';
 // This folder
 @import './image-container.scss';
-@import './header.scss';
+@import './footer-header.scss';
 @import './articles.scss';
 @import './sections.scss';
 
@@ -23,6 +23,12 @@ body {
     background: var(--white-radial-gradient-1);
     background-image: url('../img/bg6.png');
     font-family: "NotoSans-Regular";
+
+}
+
+* {
+    font-family: 'NotoSans-Regular', Helvetica;
+    color: #0F1E50;
 }
 
 
