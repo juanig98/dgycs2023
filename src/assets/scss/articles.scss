@@ -1,75 +1,75 @@
 .article-home {
-
-
-    .container-slogan {
+    .home {
+        margin-top: 80px;
         display: flex;
-
-        .slogan {
-            font-family: 'NotoSans-Regular', Helvetica;
-            font-weight: bolder;
-            font-size: 55px !important;
-            color: var(--primary-color-85);
-
-        }
-    }
-
-
-}
-
-
-.banner {
-    margin: 0 auto;
-    width: 85%;
-    color: var(--primary-color-35);
-    border-radius: 20px;
-}
-
-
-.qualities {
-    display: block;
-
-    div {
-        width: fit-content;
-        display: inline-flex;
-        gap: 30px;
+        flex-wrap: wrap;
         align-items: center;
-        padding: 20px 0;
 
-        img {
-            width: 130px;
-            height: 125px;
+        .image {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 500px;
+
+                @media (max-width: 1380px) {
+                    width: 420px;
+                }
+            }
+
         }
 
-        p {
-            max-width: 400px;
-            padding-right: 10px;
+        .titles {
+            color: #0F1E50;
+            width: 50%;
+            font-family: 'NotoSans-Regular', Helvetica;
+            display: block;
+
+            h1 {
+                padding-left: 80px;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 60px;
+                line-height: 60px;
+                margin: 0;
+
+
+                @media (max-width: 1380px) {
+                    padding-left: 60px;
+                    font-size: 46px;
+                    line-height: 52px;
+                }
+            }
+
+            h2 {
+                font-weight: normal;
+                padding-left: 130px;
+                font-size: 22px;
+                margin: 0;
+
+
+                @media (max-width: 1380px) {
+                    padding-left: 100px;
+                    font-size: 20px;
+                }
+            }
+
         }
     }
-}
 
-.titles {
-    color: #0F1E50;
-    width: 50%;
-    font-family: 'NotoSans-Regular', Helvetica;
-
-    .title-1 {
-        padding-left: 80px;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 60px;
-    }
-
-    .subtitle-1 {
-        padding-left: 130px;
-        font-size: 22px;
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.pic-1 {
-    width: 50%;
-    text-align: center;
-}
+
 
 .article-features {
     display: block;
@@ -97,11 +97,21 @@
         padding: 10px;
         font-size: 14px;
 
+        @media (max-width:1380px) {
+            max-width: 400px;
+            padding: 10px;
+            font-size: 13px;
+        }
+
         h2 {
             margin: 0;
             margin-bottom: -10px;
             font-weight: 900;
             font-size: 25px;
+
+            @media (max-width:1380px) {
+                font-size: 23px;
+            }
         }
 
         ul {
@@ -110,30 +120,62 @@
 
         img {
             width: 110px;
+
+            @media (max-width:1380px) {
+                width: 90px;
+            }
         }
 
         &.feature-card-1 {
             position: absolute;
-            left: 120px;
             bottom: 45vh;
+            left: 120px;
+
+            @media (max-width:1380px) {
+                left: 50px;
+                bottom: 40vh;
+            }
         }
 
         &.feature-card-2 {
             position: absolute;
-            right: 120px;
             bottom: 35vh;
+            right: 120px;
+
+            @media (max-width:1380px) {
+                right: 50px;
+                bottom: 33vh;
+            }
         }
 
         &.feature-card-3 {
             position: absolute;
-            left: 140px;
             bottom: 15vh;
+            left: 70px;
+
+            @media (max-width:1380px) {
+                left: 110px;
+                bottom: 10vh;
+            }
+
+            ul {
+                margin-top: -10px;
+            }
         }
 
         &.feature-card-4 {
             position: absolute;
-            right: 140px;
             bottom: 5vh;
+            right: 140px;
+
+            @media (max-width:1380px) {
+                right: 110px;
+                bottom: 5vh;
+            }
+
+            ul {
+                margin-top: -10px;
+            }
         }
     }
 }
@@ -202,18 +244,33 @@ article.article-plans {
             position: absolute;
             right: 120px;
             top: 15vh;
+
+            @media (max-width:1380px) {
+                right: 110px;
+                top: 10vh;
+            }
         }
 
         &.plan-card-organizations {
             position: absolute;
             left: 140px;
             bottom: 25vh;
+
+            @media (max-width:1380px) {
+                left: 120px;
+                bottom: 3vh;
+            }
         }
 
         &.plan-card-business {
             position: absolute;
             right: 120px;
             bottom: 10vh;
+
+            @media (max-width:1380px) {
+                right: 110px;
+                bottom: 3vh;
+            }
         }
 
         .plan-btns {
@@ -260,6 +317,12 @@ article.article-plans {
         font-size: 52px;
         text-shadow: 1px 1px 2px #0F1E50;
         margin-left: 100px;
+
+        @media (max-width: 1380px) {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
     }
 
     .questions {
@@ -267,7 +330,6 @@ article.article-plans {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 14px;
-        // grid-auto-rows: minmax(100px, auto);
 
 
         .question {
@@ -279,10 +341,14 @@ article.article-plans {
             display: flex;
             align-items: center;
 
-            &:hover{
+            @media (max-width: 1380px) {
+                font-size: 15px;
+            }
+
+            &:hover {
                 cursor: pointer;
             }
-            
+
             span {
                 width: 90%;
             }
