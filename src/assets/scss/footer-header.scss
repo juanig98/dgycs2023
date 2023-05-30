@@ -7,9 +7,7 @@ header {
     // background: linear-gradient(90deg, var(--primary-color-100) 0, var(--primary-color-35) 65%, var(--primary-color-0) 100%);
 
     display: flex;
-    justify-content: space-around;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    justify-content: space-around; 
 
     position: absolute;
     top: 0px;
@@ -57,7 +55,39 @@ img#logo {
     position: fixed;
     top: 0;
     left: calc(50% - 230px/2);
-    // transform: translate(-50%, 0);
+    z-index: 5;
+}
+img#logo-s-1 {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 150px/2);
+    opacity: 0.7;
+    z-index: 1;
+}
+img#logo-s-2 {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 150px/2);
+    opacity: 0.8;
+    z-index: 2;
+}
+img#logo-s-3 {
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 60px/2);
+    opacity: 0.7;
+    z-index: 3;
+}
+img#logo-s-4 {
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 50px/2);
+    opacity: 0.8;
+    z-index: 4;
 }
 
 

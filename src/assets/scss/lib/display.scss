@@ -1,6 +1,7 @@
 .flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .flex {
@@ -23,6 +24,15 @@
     justify-content: center;
 }
 
+.jc-end {
+    justify-content: end;
+}
+
 .text-center {
     text-align: center;
+}
+
+img.hidden {
+    visibility: hidden;
+
 }
