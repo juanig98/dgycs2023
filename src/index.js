@@ -73,10 +73,10 @@ window.addEventListener('scroll', function () {
     const x = (propY - .5) * 2;
     // Posición
     const desp = (yMax - logoHeight) * (x + 1) * (x + .5) * (x) * (x - .5) * (x - 1);
-    const desp1 = (yMax - logoHeight) * (x + 1) * (x + .51) * (x) * (x - .5) * (x - 1);
-    const desp2 = (yMax - logoHeight) * (x + 1) * (x + .49) * (x) * (x - .5) * (x - 1);
-    const desp3 = (yMax - logoHeight) * (x + 1) * (x + .52) * (x) * (x - .5) * (x - 1);
-    const desp4 = (yMax - logoHeight) * (x + 1) * (x + .58) * (x) * (x - .5) * (x - 1);
+    const desp1 = (yMax - logoHeight) * (x + 1) * (x + .55) * (x + .45) * (x) * (x - .55) * (x - .45) * (x - 1) - 50;
+    const desp2 = (yMax - logoHeight) * (x + 1) * (x + .60) * (x + .40) * (x) * (x - .60) * (x - .40) * (x - 1) + 45;
+    const desp3 = (yMax - logoHeight) * (x + 1.5) * (x + 1) * (x + .55) * (x + .45) * (x + .15) * (x) * (x - .15) * (x - .55) * (x - .45) * (x - 1);
+    const desp4 = (yMax - logoHeight) * (x + 1) * (x + .60) * (x + .40) * (x + .15) * (x) * (x - .15) * (x - .60) * (x - .40) * (x - 1);
 
     logo.style.top = (scrollPosition * 0.2) + "px";
     logoS1.style.top = (scrollPosition * 0.2) + "px";
@@ -94,15 +94,25 @@ window.addEventListener('scroll', function () {
     logo.style.transform = (x < 0)
         ? 'scale(' + (1 - .35 * x - .35) + ')'
         : 'scale(' + (0.3 + .35 * x + .35) + ')';
+    // logoS3.style.transform = (x < 0)
+    //     ? 'scale(' + (1 + x * 30) + ')'
+    //     : 'scale(' + (0.3 + .35 * x + .35) + ')';
 
 
     // Rotación
     logo.style.rotate = (scrollPosition / yMax * 180) + "deg"; // Con 1200 u.scroll gira 180
-    logoS1.style.rotate = (scrollPosition / yMax * 180) + "deg";
-    logoS2.style.rotate = (scrollPosition / yMax * 180) + "deg";
-    logoS3.style.rotate = (scrollPosition / yMax * 180) + 60 + "deg";
-    logoS4.style.rotate = (scrollPosition / yMax * 180) + 40 + "deg";
+    logoS1.style.rotate = (scrollPosition / yMax * 120) + "deg";
+    logoS2.style.rotate = (scrollPosition / yMax * 320) + "deg";
+    logoS3.style.rotate = (scrollPosition / yMax * -60) + "deg";
+    logoS4.style.rotate = (scrollPosition / yMax * -240) + "deg";
 
+    if (scrollPosition <= 10 || scrollPosition >= (yMax - 10)) {
+        logoS1.classList.add('hidden')
+        logoS2.classList.add('hidden')
+    } else {
+        logoS1.classList.remove('hidden')
+        logoS2.classList.remove('hidden')
+    }
     if (scrollPosition >= yMax / 3.98 && scrollPosition <= yMax - yMax / 3.98) {
         logoS3.classList.remove('hidden')
         logoS4.classList.remove('hidden')
