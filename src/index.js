@@ -73,10 +73,10 @@ window.addEventListener('scroll', function () {
     const x = (propY - .5) * 2;
     // Posición
     const desp = (yMax - logoHeight) * (x + 1) * (x + .5) * (x) * (x - .5) * (x - 1);
-    const desp1 = (yMax - logoHeight) * (x + 1) * (x + .55) * (x + .45) * (x) * (x - .55) * (x - .45) * (x - 1) - 50;
-    const desp2 = (yMax - logoHeight) * (x + 1) * (x + .60) * (x + .40) * (x) * (x - .60) * (x - .40) * (x - 1) + 45;
-    const desp3 = (yMax - logoHeight) * (x + 1.5) * (x + 1) * (x + .55) * (x + .45) * (x + .15) * (x) * (x - .15) * (x - .55) * (x - .45) * (x - 1);
-    const desp4 = (yMax - logoHeight) * (x + 1) * (x + .60) * (x + .40) * (x + .15) * (x) * (x - .15) * (x - .60) * (x - .40) * (x - 1);
+    const desp1 = (yMax - logoHeight) * (x + 1) * (x + .5) * (x) * (x - .5) * (x - 1) * (1.5 * x + .55) * (x + .40) * (2 * x - .55) * (x - .45) - 45;
+    const desp2 = (yMax - logoHeight) * (x + 1) * (x + .5) * (x) * (x - .5) * (x - 1) * (1.5 * x + .60) * (x + .45) * (2 * x - .60) * (x - .40) + 45;
+    const desp3 = (yMax - logoHeight) * (x + 1) * (x + .5) * (x) * (x - .5) * (x - 1) * (2 * x + .45) * (x + .15) * (x - .15) * (2 * x - .55) - 35;
+    const desp4 = (yMax - logoHeight) * (x + 1) * (x + .5) * (x) * (x - .5) * (x - 1) * (2 * x + .65) * (x + .15) * (x - .15) * (2 * x - .60) + 35;
 
     logo.style.top = (scrollPosition * 0.2) + "px";
     logoS1.style.top = (scrollPosition * 0.2) + "px";
