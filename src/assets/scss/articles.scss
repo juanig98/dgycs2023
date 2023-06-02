@@ -46,7 +46,7 @@
 
             h2 {
                 font-weight: normal;
-                padding-left: 80px; 
+                padding-left: 80px;
                 font-size: 22px;
                 margin: 0;
 
@@ -394,15 +394,21 @@ article.article-plans {
 
     >div {
         width: 520px;
-        height: 600px;
+        height: 520px;
 
         @media (max-width: 1380px) {
             width: 475px;
-            height: 500px;
+            height: 520px;
+        }
 
+        @media (max-width: 1170px) {
+            width: 475px;
+            height: 450px;
         }
 
         .news {
+            margin-top: -8px;
+
             .title {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
@@ -449,7 +455,7 @@ article.article-plans {
                 margin-top: -6px !important;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
-                box-shadow: 0px 5px 3px 0px #00000040;
+                box-shadow: 0px 1px 3px 0px #00000040;
 
                 .group-input {
 
@@ -481,14 +487,9 @@ article.article-plans {
                 }
             }
 
-            .cont-triang-invert {
-                padding: 0 !important;
-                background-color: rgba(0, 0, 0, 0.25) !important;
-            }
 
             .triang-invert {
                 margin: -2px auto 0;
-                background-color: transparent;
                 width: 0;
                 border-right: calc(475px * 0.5) solid transparent;
                 border-left: calc(475px * 0.5) solid transparent;
@@ -528,16 +529,13 @@ article.article-plans {
 
         }
 
-
-
-
     }
 
     .companies {
         padding: 10px;
         border-radius: 10px;
         background-color: rgba(245, 248, 255, 0.9);
-        box-shadow: 0px 0 3px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         .title {
             padding: 10px 16px;
